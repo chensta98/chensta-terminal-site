@@ -1,10 +1,16 @@
+import { writeToHistory } from "./writeToHistory";
+
 export function displayHelp() {
-    const history = document.getElementById("history");
-    const help = document.createElement("help");
     let helpText = `
-    This is the help text
+    Welcome to by site! Here are a list of commands that currently work:
+    
+    help:       displays the message you are currently seeing
+
+    welcome:    displays the welcome message again
+
+    clear:      clears the screen
+
     `;
-    help.setAttribute("id", "test");
-    help.append(helpText);
-    history.insertBefore(help, null);
+    
+    writeToHistory(helpText, "help")
 }

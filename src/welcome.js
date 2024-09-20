@@ -1,6 +1,6 @@
+import { writeToHistory } from "./writeToHistory";
+
 export function insertWelcome() {
-    const history = document.getElementById("history");
-    const welcome = document.createElement("pre");
     let welcomeText = `
      _______   ___   ___   _______   __   __   _______   _______   _______
     /  ____// /  /  /  // /  ____// / || / // / _____// /_   __// /  __   //
@@ -15,7 +15,5 @@ Type 'help' for list of commands
 `;
 
 
-    welcome.setAttribute("id", "welcome");
-    welcome.append(welcomeText);
-    history.insertBefore(welcome, null);
+    writeToHistory(welcomeText, "welcome")
 }
