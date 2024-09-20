@@ -10,6 +10,8 @@ export function displayHelp() {
 
     clear:      clears the screen
 
+    about:      displays information about the author
+
     `;
     
     writeToHistory(helpText, "help")

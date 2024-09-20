@@ -1,6 +1,7 @@
 import { insertWelcome } from "./welcome.js";
 import { clearScreen } from "./clear.js";
 import { displayHelp } from "./help.js";
+import { displayAbout } from "./about.js";
 
 const command = document.getElementById("commandText")
 
@@ -24,21 +25,22 @@ function executeCommand(command) {
             displayHelp();
             break;
         case "clear":
-            console.log("clear screen...");
             clearScreen();
             break;
         case "ls":
-            console.log("listing...");
+            // TODO: list directories
             break;
         case "about":
-            console.log("printing about...");
+            displayAbout();
             break;
         case "welcome":
             insertWelcome();
             break;
         case "":
-            break
+            //break out here if no command intered
+            break;
         default:
+            //error if the command isnt one thats expected
             console.log("invalid command");
     }
 }
