@@ -1,0 +1,2 @@
+# Chensta Terminal Site
+The idea for this site is not new, but I wanted to make one for myself. This site has been made with HTML, CSS, and plain JS.  Hopefully I will continue to add some functionality.  I plan to host this in Azure as a static web app.
