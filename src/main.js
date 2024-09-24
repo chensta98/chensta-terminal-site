@@ -27,9 +27,6 @@ function executeCommand(command) {
         case "clear":
             clearScreen();
             break;
-        case "ls":
-            // TODO: list directories
-            break;
         case "about":
             displayAbout();
             break;
