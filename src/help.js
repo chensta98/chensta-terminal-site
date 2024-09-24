@@ -2,7 +2,7 @@ import { writeToHistory } from "./writeToHistory";
 
 export function displayHelp() {
     let helpText = `
-    Welcome to by site! Here are a list of commands that currently work:
+    Welcome to my site! Here are a list of commands that currently work:
     
     help:       displays the message you are currently seeing
 
